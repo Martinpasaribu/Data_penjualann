@@ -85,59 +85,18 @@ export const Dashboard = () => {
       <div className="flex justify-around items-center mb-10 h-h1 ">
         <div className="flex gap-x-10 h-10">
           <Link
-              to="/tambahproduk"
+              to="/add"
               className="bg-green-500 hover:bg-green-700 border border-slate-200 text-white font-bold py-2 px-4 rounded-lg"
           >
             Add New
           </Link>
-          <Link
-              to="/transaksi"
-              className="bg-ungukeren hover:bg-ungukeren border border-slate-200 text-white font-bold py-2 px-4 rounded-lg"
-          >
-           Transaksi
-          </Link>
+
         </div>
  
 
-        <div className="Tombol Cari mr-10 h-10">
-          <button className="bg-gray-400 p-2 rounded-lg" onClick={() => { toggleCari(); handleSearch();  }}>Cari</button>
-          
-      
-          <input
-            type="text"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder=" Cari produk ..."
-            className="ml-5 border border-gray-500"
-          />
-            
-        </div>
 
-        <div className=" flex relative group h-10 mb-4">
-        
-        <button className="bg-blue-500 text-black rounded focus:outline-none focus:shadow-outline-blue group-hover:bg-blue-600">
-        <h1 className="font-bold border border-gray-500 p-2">Urutkan</h1>
-        </button>
-      
-        <div className="  scale-y-0 origin-left w-96 -right-40 group-hover:block absolute bg-white border rounded shadow-md mx-auto  mt-2 transition-transform duration-500 ease-out group-hover:scale-y-100">
-            <div className=' flex flex-col  justify-center items-center'>
-            <button
-                onClick={sortByDate}
-                className="bg-ungukeren hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-3"
-              >
-                Waktu
-              </button>
-              <button
-              onClick={sortByName}
-              className="bg-ungukeren hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-3"
-            >
-              Nama Barang
-            </button>
-            
-            </div>  
 
-        </div>
-      </div>
+
 
       </div>
 
